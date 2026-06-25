@@ -1,21 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { 
-  motion, 
-  useMotionTemplate, 
-  useMotionValue, 
-  useSpring, 
-  useTransform 
-} from "framer-motion";
-import { 
-  Code2, 
-  Server, 
-  Database, 
-  Layout, 
-  Smartphone, 
-  Bot, 
-  Zap,
-} from "lucide-react";
+import { motion, useMotionTemplate, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { Code2, Server, Database, Layout, Smartphone, Bot, Zap } from "lucide-react";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
