@@ -108,7 +108,7 @@ const RecentProjects = () => {
               <span>System Output</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-              Selected <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500">Deployments</span>
+              Selected <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-400 to-cyan-500">Deployments</span>
             </h2>
           </div>
           <Link href="/projects" 
@@ -157,7 +157,7 @@ const PowerCard = ({ project, index }) => {
       transition={{ delay: index * 0.1, duration: 0.5 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group relative h-[450px] w-full rounded-[24px] bg-[#020602] overflow-hidden cursor-pointer border border-white/5 shadow-2xl"
+      className="group relative h-112.5 w-full rounded-3xl bg-[#020602] overflow-hidden cursor-pointer border border-white/5 shadow-2xl"
     >
       {/* 1. Animated Border Tracing (Neon Line Perimeter) */}
       <div className={cn(
@@ -168,7 +168,7 @@ const PowerCard = ({ project, index }) => {
       </div>
 
       {/* 2. Inner Card Content Background (Creates the 1px edge effect) */}
-      <div className="absolute inset-[1px] rounded-[23px] bg-[#050a06] overflow-hidden z-10 flex flex-col">
+      <div className="absolute inset-px rounded-[23px] bg-[#050a06] overflow-hidden z-10 flex flex-col">
         
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
@@ -178,15 +178,15 @@ const PowerCard = ({ project, index }) => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className={cn(
               "object-cover transition-all duration-700 ease-in-out",
-              isHovered ? "opacity-40 grayscale-0 contrast-125 brightness-110 scale-105" : "opacity-50 grayscale-[50%] contrast-100 scale-100"
+              isHovered ? "opacity-40 grayscale-0 contrast-125 brightness-110 scale-105" : "opacity-50 grayscale-50 contrast-100 scale-100"
             )}
           />
           {/* Static Dark Overlay */}
           <div className={cn(
             "absolute inset-0 transition-opacity duration-500",
             isHovered 
-              ? "bg-gradient-to-t from-[#020602] via-[#020602]/80 to-transparent opacity-100"
-              : "bg-gradient-to-t from-[#020602] via-[#020602]/50 to-transparent opacity-90"
+              ? "bg-linear-to-t from-[#020602] via-[#020602]/80 to-transparent opacity-100"
+              : "bg-linear-to-t from-[#020602] via-[#020602]/50 to-transparent opacity-90"
           )} />
         </div>
 
@@ -213,13 +213,13 @@ const PowerCard = ({ project, index }) => {
 
            {/* Thick Laser Line Drops from Top */}
            <div className={cn(
-             "absolute top-0 left-1/2 -translate-x-1/2 w-[3px] bg-gradient-to-b from-transparent via-emerald-400 to-emerald-300 shadow-[0_0_20px_2px_rgba(52,211,153,0.9)] transition-all duration-700 ease-in-out",
+             "absolute top-0 left-1/2 -translate-x-1/2 w-0.75 bg-linear-to-b from-transparent via-emerald-400 to-emerald-300 shadow-[0_0_20px_2px_rgba(52,211,153,0.9)] transition-all duration-700 ease-in-out",
              isHovered ? "h-[35%]" : "h-0"
            )} />
            
            {/* Rich Center Glowing Diamond Target */}
            <div className={cn(
-             "absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rotate-45 bg-white border-[4px] border-emerald-400 shadow-[0_0_30px_8px_rgba(52,211,153,0.8)] transition-all duration-500 delay-300",
+             "absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rotate-45 bg-white border-4 border-emerald-400 shadow-[0_0_30px_8px_rgba(52,211,153,0.8)] transition-all duration-500 delay-300",
              isHovered ? "scale-100" : "scale-0"
            )} />
 
@@ -286,7 +286,7 @@ const PowerCard = ({ project, index }) => {
             {/* Title */}
             <h3 className={cn(
               "text-2xl font-bold tracking-tight mb-3 transition-colors duration-500 ease-in-out",
-              isHovered ? "text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-cyan-400 drop-shadow-[0_0_10px_rgba(52,211,153,0.2)]" : "text-white"
+              isHovered ? "text-transparent bg-clip-text bg-linear-to-r from-emerald-300 to-cyan-400 drop-shadow-[0_0_10px_rgba(52,211,153,0.2)]" : "text-white"
             )}>
               {project.title}
             </h3>
@@ -326,13 +326,13 @@ const PowerCard = ({ project, index }) => {
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
                 className={cn(
-                  "flex items-center justify-center transition-all duration-500 ease-in-out group/btn ml-4 flex-shrink-0",
+                  "flex items-center justify-center transition-all duration-500 ease-in-out group/btn ml-4 shrink-0",
                   isHovered 
                     ? "w-11 h-11 rounded-full bg-emerald-500 shadow-[0_0_20px_rgba(16,185,129,0.5)] text-black border-transparent" 
                     : "w-9 h-9 rounded-xl bg-[#050a06] text-emerald-500 border border-white/5"
                 )}
               >
-                 <ArrowUpRight className={cn("transition-all duration-500", isHovered ? "w-5 h-5 stroke-[2.5]" : "w-4 h-4 stroke-[2]")} />
+                 <ArrowUpRight className={cn("transition-all duration-500", isHovered ? "w-5 h-5 stroke-[2.5]" : "w-4 h-4 stroke-2")} />
               </a>
             </div>
 
