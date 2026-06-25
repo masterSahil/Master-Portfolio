@@ -34,11 +34,11 @@ const PROJECTS = [
   },
   {
     id: 2,
-    title: "Smart Society Saas",
-    desc: "Enterprise SaaS for modern residential community management with digital transformation.",
+    title: "Secure Credentials Vault",
+    desc: "A secure web-based vault for credentials storage.",
     image: img2,
-    tech: ["Next.js", "MongoDB", "Tailwind", "RBAC"],
-    category: "Vibe Coding",
+    tech: ["React", "Node.js", "JWT", "Cloudinary"],
+    category: "Full Stack",
     repoUrl: "https://github.com/masterSahil/Credentials",
     liveUrl: "https://credentials-bay.vercel.app/"
   },
@@ -54,11 +54,11 @@ const PROJECTS = [
   },
   {
     id: 4,
-    title: "Secure Credentials Vault",
-    desc: "A secure web-based vault for credentials storage.",
+    title: "Smart Society Saas",
+    desc: "Enterprise SaaS for modern residential community management with digital transformation.",
     image: img2,
-    tech: ["React", "Node.js", "JWT", "Cloudinary"],
-    category: "Full Stack",
+    tech: ["Next.js", "MongoDB", "Tailwind", "RBAC"],
+    category: "Vibe Coding",
     repoUrl: "https://github.com/masterSahil/Credentials",
     liveUrl: "https://credentials-bay.vercel.app/"
   },
