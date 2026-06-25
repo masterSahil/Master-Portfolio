@@ -30,7 +30,7 @@ const PROJECTS = [
     tech: ["React", "Node", "Razorpay", "MongoDB"],
     category: "Full Stack",
     repoUrl: "https://github.com/masterSahil/Corporate-Landing-page",
-    liveUrl: "https://corporates.app/"
+    liveUrl: "https://corporates.app"
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ const PROJECTS = [
     tech: ["React", "Node.js", "JWT", "Cloudinary"],
     category: "Full Stack",
     repoUrl: "https://github.com/masterSahil/Credentials",
-    liveUrl: "https://credentials-bay.vercel.app/"
+    liveUrl: "https://credentials-bay.vercel.app"
   },
   {
     id: 3,
@@ -59,8 +59,8 @@ const PROJECTS = [
     image: saasImg,
     tech: ["Next.js", "MongoDB", "Tailwind", "RBAC"],
     category: "AI",
-    repoUrl: "https://github.com/masterSahil/Credentials",
-    liveUrl: "https://credentials-bay.vercel.app/"
+    repoUrl: "https://github.com/masterSahil/Master-Portfolio",
+    liveUrl: "https://society-saas-web.vercel.app"
   },
   {
     id: 5,
@@ -70,7 +70,7 @@ const PROJECTS = [
     tech: ["React", "Gemini API", "Theme UI"],
     category: "Frontend",
     repoUrl: "https://github.com/masterSahil/Chatbot-main",
-    liveUrl: "https://chatbot-main-nine.vercel.app/"
+    liveUrl: "https://chatbot-main-nine.vercel.app"
   },
   {
     id: 6,
