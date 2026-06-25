@@ -151,7 +151,7 @@ const RecentProjects = () => {
               viewport={{ once: true }}
               className="text-4xl md:text-6xl font-bold text-white tracking-tight"
             >
-              Selected <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500">Deployments</span>
+              Selected <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-400 to-cyan-500">Deployments</span>
             </motion.h2>
           </div>
 
@@ -248,7 +248,7 @@ const ProjectCard = ({ project, isFocused, setFocused }) => {
              isFocused ? "scale-110 blur-[2px]" : "group-hover:scale-110 group-hover:blur-[2px]"
            )}
          />
-         <div className="absolute inset-0 bg-gradient-to-t from-[#020602] via-[#020602]/80 to-transparent opacity-90 transition-opacity duration-500" />
+         <div className="absolute inset-0 bg-linear-to-t from-[#020602] via-[#020602]/80 to-transparent opacity-90 transition-opacity duration-500" />
       </div>
 
       {/* 3. CONTENT CONTAINER */}
