@@ -16,8 +16,8 @@ function cn(...inputs) {
 import img1 from '../assets/Image/Home/Projects/prj1.png'
 import img2 from '../assets/Image/Home/Projects/prj2.png'
 import img3 from '../assets/Image/Home/Projects/prj3.png'
+import saasImg from '../assets/Image/Home/Projects/saas.png'
 import img4 from '../assets/Image/Home/Projects/prj4.png'
-import img5 from '../assets/Image/Home/Projects/prj5.png'
 import img6 from '../assets/Image/Home/Projects/prj6.png'
 
 // --- DATA ---
@@ -56,9 +56,9 @@ const PROJECTS = [
     id: 4,
     title: "Smart Society Saas",
     desc: "Enterprise SaaS for modern residential community management with digital transformation.",
-    image: img2,
+    image: saasImg,
     tech: ["Next.js", "MongoDB", "Tailwind", "RBAC"],
-    category: "Vibe Coding",
+    category: "AI",
     repoUrl: "https://github.com/masterSahil/Credentials",
     liveUrl: "https://credentials-bay.vercel.app/"
   },
@@ -68,7 +68,7 @@ const PROJECTS = [
     desc: "Real-time conversational agent with memory.",
     image: img3,
     tech: ["React", "Gemini API", "Theme UI"],
-    category: "AI",
+    category: "Frontend",
     repoUrl: "https://github.com/masterSahil/Chatbot-main",
     liveUrl: "https://chatbot-main-nine.vercel.app/"
   },
