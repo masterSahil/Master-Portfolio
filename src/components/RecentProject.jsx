@@ -21,7 +21,7 @@ import img1 from '../assets/Image/Home/Projects/prj1.png'
 import img2 from '../assets/Image/Home/Projects/prj2.png'
 import img3 from '../assets/Image/Home/Projects/prj3.png'
 import img4 from '../assets/Image/Home/Projects/prj4.png'
-import img5 from '../assets/Image/Home/Projects/prj5.png'
+import saasImg from '../assets/Image/Home/Projects/saas.png'
 import img6 from '../assets/Image/Home/Projects/prj6.png'
 
 // --- PROJECT DATA ---
@@ -47,17 +47,7 @@ const PROJECTS = [
     liveUrl: "https://credentials-bay.vercel.app/"
   },
   {
-    id: 3,
-    title: "Secure Vault Mobile App",
-    desc: "A cross-platform mobile vault application to securely store any kind of credentials.",
-    image: img6,
-    tech: ["Native", "MongoDB", "Supabase", "Expo"],
-    category: "Mobile App",
-    repoUrl: "https://github.com/masterSahil/Vault-App",
-    liveUrl: "https://github.com/masterSahil/Vault-App"
-  },
-  {
-  id: 4,
+  id: 3,
     title: "Full Stack E-Commerce",
     desc: "A complete MERN-based e-commerce platform with inventory management.",
     image: img4,
@@ -67,14 +57,24 @@ const PROJECTS = [
     liveUrl: "https://e-shop-pearl-gamma.vercel.app"
   },
   {
+    id: 4,
+    title: "Smart Society Saas",
+    desc: "Enterprise SaaS for modern residential community management with digital transformation.",
+    image: saasImg,
+    tech: ["Next.js", "MongoDB", "Tailwind", "RBAC"],
+    category: "AI",
+    repoUrl: "https://github.com/masterSahil/Credentials",
+    liveUrl: "https://credentials-bay.vercel.app/"
+  },
+  {
     id: 5,
-    title: "React Projects Collection",
-    desc: "A curated collection of multiple React.js projects.",
-    image: img5,
-    tech: ["React", "Tailwind", "Redux"],
-    category: "Frontend",
-    repoUrl: "https://github.com/masterSahil/React-Projects",
-    liveUrl: "https://github.com/masterSahil/React-Projects"
+    title: "Secure Vault Mobile App",
+    desc: "A cross-platform mobile vault application to securely store any kind of credentials.",
+    image: img6,
+    tech: ["Native", "MongoDB", "Supabase", "Expo"],
+    category: "Mobile App",
+    repoUrl: "https://github.com/masterSahil/Vault-App",
+    liveUrl: "https://github.com/masterSahil/Vault-App"
   },
   {
     id: 6,
