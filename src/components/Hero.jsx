@@ -2,14 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { 
-  motion, 
-  useMotionTemplate, 
-  useMotionValue, 
-  useSpring, 
-  useTransform, 
-  animate 
-} from "framer-motion";
+import { motion, useMotionTemplate, useMotionValue, useSpring, useTransform, animate } from "framer-motion";
 import { Mail, ArrowRight, Server, Smartphone, Cpu, Terminal } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
