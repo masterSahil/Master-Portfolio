@@ -34,33 +34,33 @@ const PROJECTS = [
   },
   {
     id: 2,
-    title: "React Collection",
-    desc: "A curated library of modular React components.",
-    image: img5,
-    tech: ["React", "Tailwind", "Redux"],
-    category: "Frontend",
-    repoUrl: "https://github.com/masterSahil/React-Projects",
-    liveUrl: "https://github.com/masterSahil/React-Projects"
-  },
-  {
-    id: 3,
-    title: "Secure Credentials Vault",
-    desc: "A secure web-based vault for credentials storage.",
+    title: "Smart Society Saas",
+    desc: "Enterprise SaaS for modern residential community management with digital transformation.",
     image: img2,
-    tech: ["React", "Node.js", "JWT"],
-    category: "Full Stack",
+    tech: ["Next.js", "MongoDB", "Tailwind", "RBAC"],
+    category: "Vibe Coding",
     repoUrl: "https://github.com/masterSahil/Credentials",
     liveUrl: "https://credentials-bay.vercel.app/"
   },
   {
-    id: 4,
+    id: 3,
     title: "E-SHOP Platform",
     desc: "Complete MERN e-commerce with inventory.",
     image: img4,
-    tech: ["MongoDB", "Express", "React"],
+    tech: ["MongoDB", "Express", "React.js", "multer"],
     category: "Full Stack",
     repoUrl: "https://github.com/masterSahil/E-Shop",
     liveUrl: "https://e-shop-pearl-gamma.vercel.app"
+  },
+  {
+    id: 4,
+    title: "Secure Credentials Vault",
+    desc: "A secure web-based vault for credentials storage.",
+    image: img2,
+    tech: ["React", "Node.js", "JWT", "Cloudinary"],
+    category: "Full Stack",
+    repoUrl: "https://github.com/masterSahil/Credentials",
+    liveUrl: "https://credentials-bay.vercel.app/"
   },
   {
     id: 5,
