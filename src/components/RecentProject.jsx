@@ -1,12 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { 
-  motion
-} from "framer-motion";
-import { 
-  ArrowUpRight, 
-  Terminal,
-} from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowUpRight, Terminal } from "lucide-react";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import Link from "next/link";
