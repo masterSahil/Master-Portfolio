@@ -1,12 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import { 
-  motion, 
-  useScroll, 
-  useTransform, 
-  useMotionValue, 
-  useMotionTemplate 
-} from "framer-motion";
+import { motion, useScroll, useTransform, useMotionValue, useMotionTemplate } from "framer-motion";
 import { Mail, Download } from "lucide-react";
 
 const ContactCTA = () => {
@@ -106,10 +100,7 @@ const ContactCTA = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             {/* Primary Button: Open Email */}
-            <a 
-              href="mailto:7882mastersahil@gmail.com"
-              className="group/btn relative overflow-hidden rounded-full bg-green-600 px-10 py-4 font-bold text-white transition-all hover:scale-105 hover:bg-green-500 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)] active:scale-95"
-            >
+            <a href="mailto:7882mastersahil@gmail.com" className="group/btn relative overflow-hidden rounded-full bg-green-600 px-10 py-4 font-bold text-white transition-all hover:scale-105 hover:bg-green-500 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)] active:scale-95" >
               <span className="relative z-10 flex items-center gap-2">
                 <Mail className="w-5 h-5" />
                 Contact Me
@@ -119,16 +110,12 @@ const ContactCTA = () => {
             </a>
 
             {/* Secondary Button: Download Resume */}
-            <a 
-              href="/Master_Sahil_Resume.pdf" 
-              download="Sahil_Master_Resume.pdf"
-              className="group/btn flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-8 py-4 font-semibold text-slate-300 transition-all hover:bg-white/10 hover:text-white active:scale-95"
-            >
+            <a href="/Master_Sahil_Resume.pdf" download="Sahil_Master_Resume.pdf"
+              className="group/btn flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-8 py-4 font-semibold text-slate-300 transition-all hover:bg-white/10 hover:text-white active:scale-95" >
               <Download className="w-5 h-5 text-green-400" />
               Download CV
             </a>
           </motion.div>
-
         </div>
       </div>
     </section>
