@@ -72,18 +72,15 @@ const Deliver = () => {
   };
 
   return (
-    <section 
-      onMouseMove={handleMouseMove}
-      className="relative w-full bg-[#020602] py-16 md:py-24 overflow-hidden group/section"
-    >
+    <section onMouseMove={handleMouseMove}
+      className="relative w-full bg-[#020602] py-16 md:py-24 overflow-hidden group/section" >
       {/* --- Dynamic Green Grid Background --- */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 right-0 w-75 md:w-125 h-75 md:h-125 bg-green-900/20 rounded-full blur-[80px] md:blur-[128px]" />
         
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[2rem_2rem] md:bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
 
-        <motion.div
-          className="absolute inset-0 opacity-0 group-hover/section:opacity-100 transition-opacity duration-500"
+        <motion.div className="absolute inset-0 opacity-0 group-hover/section:opacity-100 transition-opacity duration-500"
           style={{
             background: useMotionTemplate`
               radial-gradient(
@@ -106,15 +103,14 @@ const Deliver = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="max-w-2xl"
-          >
+            className="max-w-2xl" >
             <div className="inline-flex items-center gap-2 mb-4">
                <span className="w-8 h-0.5 bg-green-500"></span>
                <span className="text-green-400 font-bold tracking-widest text-sm uppercase">What I Deliver</span>
             </div>
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               High-Impact Services <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-emerald-600">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-green-300 to-emerald-600">
                 For Modern Brands.
               </span>
             </h2>
@@ -151,7 +147,7 @@ const ServiceCard = ({ service, index }) => {
         service.themeShadow
       )}>
         {/* --- Background Elements --- */}
-        <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/80 pointer-events-none" />
+        <div className="absolute inset-0 bg-linear-to-br from-transparent to-black/80 pointer-events-none" />
         
         {/* Giant Abstract Icon Background */}
         <div className="absolute -right-12 -top-12 opacity-5 group-hover:opacity-10 group-active:opacity-10 group-focus:opacity-10 transition-opacity duration-500">
@@ -200,7 +196,7 @@ const ServiceCard = ({ service, index }) => {
         </div>
 
         {/* --- Interactive Gradient Overlay --- */}
-        <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-500 pointer-events-none" />
+        <div className="absolute inset-0 bg-linear-to-br from-green-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
       </div>
     </motion.div>
