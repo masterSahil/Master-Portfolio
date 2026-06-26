@@ -104,7 +104,7 @@ export default function ChatWidget() {
 
                                 <div className="flex justify-between items-center px-5 py-4 relative z-20">
                                     <div className="flex items-center gap-3">
-                                        <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-green-900/80 to-black border border-green-500/30 flex items-center justify-center shadow-[0_0_15px_-3px_rgba(34,197,94,0.3)]">
+                                        <div className="relative w-10 h-10 rounded-xl bg-linear-to-br from-green-900/80 to-black border border-green-500/30 flex items-center justify-center shadow-[0_0_15px_-3px_rgba(34,197,94,0.3)]">
                                             <Cpu size={20} className="text-green-400" />
                                             <span className="absolute -top-1 -right-1 flex h-3 w-3">
                                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -113,7 +113,7 @@ export default function ChatWidget() {
                                         </div>
 
                                         <div className="flex flex-col">
-                                            <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-white via-green-100 to-green-400 font-bold text-[16px] tracking-wide">
+                                            <h3 className="text-transparent bg-clip-text bg-linear-to-r from-white via-green-100 to-green-400 font-bold text-[16px] tracking-wide">
                                                 SAHIL.AI
                                             </h3>
                                             <div className="flex items-center gap-2">
@@ -123,14 +123,13 @@ export default function ChatWidget() {
                                         </div>
                                     </div>
 
-                                    <button
-                                        onClick={() => setIsOpen(false)}
+                                    <button onClick={() => setIsOpen(false)}
                                         className="w-8 h-8 flex items-center justify-center rounded-lg bg-white/5 hover:bg-red-500/20 text-gray-400 hover:text-red-400 transition-all border border-transparent hover:border-red-500/30"
                                     >
                                         <X size={18} />
                                     </button>
                                 </div>
-                                <div className="h-px w-full bg-gradient-to-r from-transparent via-green-500/50 to-transparent opacity-50"></div>
+                                <div className="h-px w-full bg-linear-to-r from-transparent via-green-500/50 to-transparent opacity-50"></div>
                             </div>
 
                             {/* Chat Area - flex-1 ensures it takes remaining height */}
@@ -262,7 +261,7 @@ export default function ChatWidget() {
                                 <button
                                     type="submit"
                                     disabled={isLoading || !inputValue.trim()}
-                                    className="w-10 h-10 rounded-full bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center text-white transition-transform hover:scale-105 active:scale-95 disabled:opacity-50 disabled:grayscale shadow-[0_4px_10px_rgba(34,197,94,0.3)] shrink-0"
+                                    className="w-10 h-10 rounded-full bg-linear-to-br from-green-500 to-green-700 flex items-center justify-center text-white transition-transform hover:scale-105 active:scale-95 disabled:opacity-50 disabled:grayscale shadow-[0_4px_10px_rgba(34,197,94,0.3)] shrink-0"
                                 >
                                     <ChevronRight size={22} />
                                 </button>
