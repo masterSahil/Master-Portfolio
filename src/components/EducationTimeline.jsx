@@ -90,7 +90,7 @@ const EducationTimeline = () => {
     >
       {/* --- BACKGROUND MATRIX EFFECT --- */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-125 bg-gradient-to-b from-green-900/20 via-transparent to-transparent opacity-50" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-125 bg-linear-to-b from-green-900/20 via-transparent to-transparent opacity-50" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
         
         {/* Flashlight Cursor */}
@@ -128,7 +128,7 @@ const EducationTimeline = () => {
               viewport={{ once: true }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight"
             >
-              My <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Evolution</span>
+              My <span className="text-transparent bg-clip-text bg-linear-to-r from-green-400 to-emerald-600">Evolution</span>
             </motion.h2>
         </div>
 
@@ -139,7 +139,7 @@ const EducationTimeline = () => {
           <div className="absolute left-4 lg:left-1/2 top-0 bottom-0 w-0.5 lg:-translate-x-1/2 bg-white/5 rounded-full overflow-hidden">
              <motion.div 
                style={{ height: useTransform(scrollYProgress, [0, 1], ["0%", "100%"]) }}
-               className="absolute top-0 left-0 w-full bg-gradient-to-b from-green-400 via-emerald-500 to-green-600 shadow-[0_0_15px_#22c55e]"
+               className="absolute top-0 left-0 w-full bg-linear-to-b from-green-400 via-emerald-500 to-green-600 shadow-[0_0_15px_#22c55e]"
              />
           </div>
 
@@ -195,7 +195,7 @@ const TimelineItem = ({ data, index }) => {
       )}>
         <div className="flex flex-col gap-2">
            <div className={cn(
-             "text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white/30 to-transparent font-mono select-none",
+             "text-6xl font-bold text-transparent bg-clip-text bg-linear-to-b from-white/30 to-transparent font-mono select-none",
              isEven ? "text-left" : "text-right"
            )}>
              {data.year}
