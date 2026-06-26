@@ -58,7 +58,7 @@ const DigitalArsenal = () => {
       className="relative w-full bg-[#020602] py-24 overflow-hidden group perspective-2000"
     >
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-125 bg-gradient-to-b from-green-900/20 via-transparent to-transparent opacity-50" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-125 bg-linear-to-b from-green-900/20 via-transparent to-transparent opacity-50" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
         <motion.div
           className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -91,9 +91,8 @@ const DigitalArsenal = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
-          >
-            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-emerald-600">Digital Arsenal</span>
+            className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight" >
+            My <span className="text-transparent bg-clip-text bg-linear-to-r from-green-300 to-emerald-600">Digital Arsenal</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -186,7 +185,7 @@ const Hexagon3D = ({ tech, index }) => {
         >
           {/* Spotlight Gradient - Visible if Tapped OR Hovered */}
           <div className={cn(
-            "absolute inset-0 bg-gradient-to-br from-green-500/0 via-green-500/0 to-green-500/20 transition-opacity duration-500",
+            "absolute inset-0 bg-linear-to-br from-green-500/0 via-green-500/0 to-green-500/20 transition-opacity duration-500",
             (isTapped ? "opacity-100" : "opacity-0 group-hover/hex:opacity-100")
           )} />
 
