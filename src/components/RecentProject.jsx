@@ -58,7 +58,7 @@ const PROJECTS = [
     image: saasImg,
     tech: ["Next.js", "MongoDB", "Tailwind", "RBAC"],
     category: "AI",
-    repoUrl: "https://github.com/masterSahil/Master-Portfolio",
+    repoUrl: "https://github.com/masterSahil/Society-Saas",
     liveUrl: "https://society-saas-web.vercel.app"
   },
   {
