@@ -163,7 +163,7 @@ const Hero = () => {
               variants={itemVariants}
               className="text-slate-400 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl"
             >
-              I architect robust <span className="text-slate-200 font-medium">Backend</span> systems and build high-performance <span className="text-slate-200 font-medium">React Native</span> applications, integrated with next-gen AI automation.
+              I architect robust <span className="text-slate-200 font-medium">Full Stack</span> systems and build high-performance <span className="text-slate-200 font-medium">React Native</span> applications, integrated with next-gen AI automation.
             </motion.p>
 
             {/* Buttons */}
