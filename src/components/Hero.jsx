@@ -65,17 +65,42 @@ const Hero = () => {
       </div>
 
       {/* --- 2. HUGE BACKGROUND NAME (SVG Tracing Animation) --- */}
-      <div className="absolute inset-0 flex items-center justify-start lg:pl-[2%] xl:pl-[5%] z-0 overflow-hidden pointer-events-none">
-        <svg 
-          className="w-[200%] sm:w-[150%] md:w-[120%] lg:w-[90%] xl:w-[85%] h-auto max-h-125 overflow-visible" 
+      <div className="absolute pt-80 sm:pt-120 lg:pt-0 inset-0 flex items-center justify-center lg:justify-start lg:pl-[2%] xl:pl-[5%] z-0 overflow-hidden pointer-events-none">
+        <svg className="w-[200%] sm:w-[150%] md:w-[120%] lg:w-[90%] xl:w-[85%] h-auto max-h-125 overflow-visible" 
           viewBox="0 0 1000 300" 
-          preserveAspectRatio="xMinYMid meet"
-        >
+          preserveAspectRatio="xMidYMid meet">
+          
+          {/* Mobile Centered Text */}
+          <motion.text
+            x="50%"
+            y="50%"
+            textAnchor="middle"
+            dominantBaseline="middle"
+            className="font-black select-none tracking-tighter lg:hidden"
+            style={{
+              fontSize: '280px',
+              fontFamily: 'system-ui, sans-serif',
+              fill: 'transparent',
+              stroke: 'rgba(28, 173, 57, 0.23)',
+              strokeWidth: '2px',
+              strokeDasharray: 4000,
+            }}
+            initial={{ strokeDashoffset: 4000, opacity: 0 }}
+            animate={{ strokeDashoffset: 0, opacity: 1 }}
+            transition={{ 
+              strokeDashoffset: { duration: 4, ease: "easeInOut", delay: 2 },
+              opacity: { duration: 1, ease: "easeOut", delay: 2 }
+            }}
+          >
+            SAHIL
+          </motion.text>
+
+          {/* Desktop Left-Aligned Text */}
           <motion.text
             x="0"
             y="50%"
             dominantBaseline="middle"
-            className="font-black select-none tracking-tighter"
+            className="font-black select-none tracking-tighter hidden lg:block"
             style={{
               fontSize: '280px',
               fontFamily: 'system-ui, sans-serif',
