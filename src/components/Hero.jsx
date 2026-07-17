@@ -71,8 +71,7 @@ const Hero = () => {
           preserveAspectRatio="xMidYMid meet">
 
           {/* Mobile Centered Text */}
-          <motion.text
-            x="50%"
+          <motion.text x="50%"
             y="50%"
             textAnchor="middle"
             dominantBaseline="middle"
@@ -225,15 +224,15 @@ const Hero = () => {
               variants={itemVariants}
               className="flex items-center gap-8 sm:gap-12 pt-8 border-t border-white/10 mt-4 w-full justify-center lg:justify-start"
             >
-              <Stat
-                value={<CountUp from={0} to={20} />}
-                suffix="+"
-                label="Projects"
-              />
-              <div className="w-px h-10 bg-white/10"></div>
-              <Stat value="BCA" label="Student" />
+                <Stat
+                  value={<CountUp from={0} to={20} />}
+                  suffix="+"
+                  label="Projects"
+                />
+                <div className="w-px h-10 bg-white/10"></div>
+                <Stat value="BCA" label="Student" />
 
-              <div className="flex gap-4 ml-auto lg:ml-0">
+              <div className="flex gap-4 sm:ml-4">
                 <SocialIcon icon={FaGithub} target="_blank" rel="noopener noreferrer" href="https://github.com/masterSahil" />
                 <SocialIcon icon={FaLinkedin} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sahil-master/" />
               </div>
