@@ -34,20 +34,20 @@ const Hero = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { duration: 0.6, ease: "easeOut" } 
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" }
     },
   };
 
   const rightSideVariants = {
     hidden: { opacity: 0, x: 50, scale: 0.9 },
-    visible: { 
-      opacity: 1, 
-      x: 0, 
-      scale: 1, 
-      transition: { duration: 0.8, ease: "easeOut", delay: 0.4 } 
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      transition: { duration: 0.8, ease: "easeOut", delay: 0.4 }
     },
   };
 
@@ -66,10 +66,10 @@ const Hero = () => {
 
       {/* --- 2. HUGE BACKGROUND NAME (SVG Tracing Animation) --- */}
       <div className="absolute pt-80 sm:pt-120 lg:pt-0 inset-0 flex items-center justify-center lg:justify-start lg:pl-[2%] xl:pl-[5%] z-0 overflow-hidden pointer-events-none">
-        <svg className="w-[200%] sm:w-[150%] md:w-[120%] lg:w-[90%] xl:w-[85%] h-auto max-h-125 overflow-visible" 
-          viewBox="0 0 1000 300" 
+        <svg className="w-[200%] sm:w-[150%] md:w-[120%] lg:w-[90%] xl:w-[85%] h-auto max-h-125 overflow-visible"
+          viewBox="0 0 1000 300"
           preserveAspectRatio="xMidYMid meet">
-          
+
           {/* Mobile Centered Text */}
           <motion.text
             x="50%"
@@ -87,7 +87,7 @@ const Hero = () => {
             }}
             initial={{ strokeDashoffset: 4000, opacity: 0 }}
             animate={{ strokeDashoffset: 0, opacity: 1 }}
-            transition={{ 
+            transition={{
               strokeDashoffset: { duration: 4, ease: "easeInOut", delay: 2 },
               opacity: { duration: 1, ease: "easeOut", delay: 2 }
             }}
@@ -111,7 +111,7 @@ const Hero = () => {
             }}
             initial={{ strokeDashoffset: 4000, opacity: 0 }}
             animate={{ strokeDashoffset: 0, opacity: 1 }}
-            transition={{ 
+            transition={{
               strokeDashoffset: { duration: 4, ease: "easeInOut", delay: 2 },
               opacity: { duration: 1, ease: "easeOut", delay: 2 }
             }}
@@ -198,7 +198,7 @@ const Hero = () => {
             >
               {/* View Projects */}
               <motion.button
-                onClick={()=>router.push('/projects')}
+                onClick={() => router.push('/projects')}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full sm:w-auto group relative flex items-center justify-center gap-3 overflow-hidden rounded-xl bg-green-600 px-8 py-3.5 text-white transition-all duration-300 hover:bg-green-500 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
@@ -225,10 +225,10 @@ const Hero = () => {
               variants={itemVariants}
               className="flex items-center gap-8 sm:gap-12 pt-8 border-t border-white/10 mt-4 w-full justify-center lg:justify-start"
             >
-              <Stat 
-                value={<CountUp from={0} to={20} />} 
-                suffix="+" 
-                label="Projects" 
+              <Stat
+                value={<CountUp from={0} to={20} />}
+                suffix="+"
+                label="Projects"
               />
               <div className="w-px h-10 bg-white/10"></div>
               <Stat value="BCA" label="Student" />
@@ -251,7 +251,7 @@ const Hero = () => {
             <ProfileCard />
 
             {/* Tech Badges with their own stagger */}
-            <motion.div 
+            <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -369,7 +369,7 @@ const ProfileCard = () => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover grayscale-20% group-hover/card:grayscale-0 transition-all duration-500 scale-[1.15]"
           />
-           <div className="absolute inset-0 bg-black/35 group-hover/card:bg-black/25 transition-colors duration-500 z-10" />
+          <div className="absolute inset-0 bg-black/35 group-hover/card:bg-black/25 transition-colors duration-500 z-10" />
           <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent z-10" />
 
           {/* 3D Floating Code Snippet */}
@@ -449,7 +449,7 @@ const Stat = ({ value, suffix, label }) => (
 );
 
 const SocialIcon = ({ icon: Icon, ...props }) => (
-  <a  {...props} 
+  <a  {...props}
     className="w-10 h-10 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-green-600 hover:border-green-600 transition-all duration-300 hover:scale-110" >
     <Icon className="w-5 h-5" />
   </a>
